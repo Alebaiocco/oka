@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alexandre Baiocco">
+        <meta name="description" content="Pagina destinada a venda de podrutos por meio de um e-commercer">
+        <meta name="keywords" content="e-commerce, vendas, produtos">
+        <link href="../CSS/style.css" rel="stylesheet">
+        <script src="../JS/validacoes.js"></script>
+
+        <title>ARTIGOS BAIOCCO</title>
+    </head>
+
+    <body>
+        <div class="box-mid">
+            <div>
+				<form action="" method = "get">
+                <div class="box-venda1">
+                    <h1>GOLD</h1>
+                    <h2 class="desc_venda">Nesta assinatura possibilita destaque em suas publicações e comentarios</h2>
+                    <button onclick="redirect(venda.html)" class="button" name="OKA"> Assine </button>
+                </div>
+                <hr>
+                <div class="box-venda2">
+                    <h1>Platinum</h1>
+                    <h2 class="desc_venda">Nesta assinatura possibilita criações de publicações e comentarios</h2>
+                    <button name="OKA" type = "submit"> Assine </button>
+                </div>
+                <hr>
+                <div class="box-venda3">
+                    <h1>Saphire</h1>
+                    <h2 class="desc_venda">Nesta assinatura possibilita comentarios em publicações</h2>
+                    <button name="OKA"> Assine </button>
+                </div>
+			</form>
+            
+            </div>
+        </div>
+        <br>
+		<script>
+			const redirect = (rota) =>{
+				window.location.replace(`http://127.0.0.1:5000/${rota}`)
+			}
+		</script>
+    </body>
+</html>
